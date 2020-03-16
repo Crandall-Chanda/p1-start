@@ -13,6 +13,8 @@ data = np.loadtxt(filename)   # Attempts to load filename into local variable da
 #   $ python plot.py raw-data/Sp15_245L_sect-001_group-1_glass.raw
 # at the command line.
 # just making edits :)
+# this should output nothing here 
+
 
 ## Part 1
 # Figure out what columns and rows of data we need to plot
