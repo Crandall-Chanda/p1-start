@@ -4,14 +4,19 @@ import sys
 
 filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2 
 data = np.loadtxt(filename)   # Attempts to load filename into local variable data.
+data = np.loadtxt(filename, skiprows=32, delimiter=',')
+plt.plot(data[0],data[7])
+plt.show()
+exit()
 
-## Part 0
+# Part 0
 # Figure out what arguments to add to the loadtxt function call
 # so that numbers are loaded into the local function 'data'.
 # Hint: look for arguments like 'skiprows' and 'delimiter'
 # Check by running:
 #   $ python plot.py raw-data/Sp15_245L_sect-001_group-1_glass.raw
 # at the command line.
+
 
 ## Part 1
 # Figure out what columns and rows of data we need to plot
