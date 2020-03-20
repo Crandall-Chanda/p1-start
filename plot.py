@@ -2,10 +2,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys
 
-filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2 
-data = np.loadtxt(filename)   # Attempts to load filename into local variable data.
-data = np.loadtxt(filename, skiprows=33, delimiter=',', usecols = (2))
-plt.plot(data[0],data[7],usecols = (3))
+filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2
+Stress = np.loadtxt(filename, skiprows=33, delimiter=',', usecols =(4))
+Strain = np.loadtxt(filename, skiprows=33, delimeter = ',', usecols = (8))
+plt.plot(Strain, Stress, color = 'pink' , label = 'darkgrey' , linestyle = '-.')
+plt.xlabel('Strain')
+plt.ylabel('Stress')
+plt.title('Stress vs Strain for Glass ')
+plt.grid();
 plt.show()
 exit()
 
