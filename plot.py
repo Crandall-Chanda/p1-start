@@ -4,11 +4,11 @@ import sys
 
 filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2
 Data = np.loadtxt(filename, skiprows = 33, delimiter = ',' )
-Stress= Data[:,4]
-Strain = Data [:,8] 
-plt.plot(Strain, Stress, color = 'pink' , label = 'darkgrey' , linestyle = '-.')
+Stress= Data[:,3]
+Strain = Data [:,7] 
+plt.plot(Strain, Stress, color = 'green' , label = 'darkgrey' , linestyle = '-.')
 plt.xlabel('Strain')
-plt.ylabel('Stress')
+plt.ylabel('Stress Mpa')
 plt.title('Stress vs Strain for Glass ')
 plt.grid()
 plt.show()
