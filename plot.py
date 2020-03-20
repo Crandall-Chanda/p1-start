@@ -6,7 +6,7 @@ filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py
 Data = np.loadtxt(filename, skiprows = 33, delimiter = ',' )
 Stress= Data[:,3]
 Strain = Data [:,7] 
-plt.plot(Strain, Stress, color = 'green' , label = 'darkgrey' , linestyle = '-.')
+plt.plot(Strain, Stress, color = 'Mediumorchid' , label = 'darkgrey' , linestyle = '-.')
 plt.xlabel('Strain')
 plt.ylabel('Stress Mpa')
 plt.title('Stress vs Strain for Glass ')
