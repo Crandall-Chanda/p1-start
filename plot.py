@@ -3,8 +3,9 @@ import numpy as np
 import sys
 
 filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2
-Stress = np.loadtxt(filename, skiprows=33, delimiter=',', usecols =(4))
-Strain = np.loadtxt(filename, skiprows=33, delimeter = ',', usecols = (8))
+Data = np.loadtext(filename, skiprows = 33, delimeter = ',' )
+Stress= Data[:,4]
+Strain = Data [:,8] 
 plt.plot(Strain, Stress, color = 'pink' , label = 'darkgrey' , linestyle = '-.')
 plt.xlabel('Strain')
 plt.ylabel('Stress')
