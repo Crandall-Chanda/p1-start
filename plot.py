@@ -17,7 +17,7 @@ plt.show()
 print(Stress) # dont think this did anything 
 print(Strain) # or this ... 
 
-exit() # not sure .. wjy i have exit .. i saw it int he lecture :)
+exit() # not sure .. why i have exit .. i saw it the lecture :)
 
 # Part 0
 # Figure out what arguments to add to the loadtxt function call
