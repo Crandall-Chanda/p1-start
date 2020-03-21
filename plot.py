@@ -5,9 +5,10 @@ import sys
 filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2
 Data = np.loadtxt(filename, skiprows = 33, delimiter = ','  ) # separated the matrix of data from the material
 Material =  sys.argv[2] # adds an argument to change the title 
+Color = sys.argv[3] # lets you change the color of the graph 
 Stress= Data[:,3] # y axis data 
 Strain = Data [:,7] # x axis data 
-plt.plot(Strain, Stress, color = 'Mediumorchid' , label = 'darkgrey' , linestyle = '-.') # plots the variable
+plt.plot(Strain, Stress, color = Color , label = 'darkgrey' , linestyle = '-.') # plots the variable
 plt.xlabel('Strain') # adds x axis label 
 plt.ylabel('Stress Mpa') # adds y axis label 
 plt.title('Stress vs Strain for '+ Material) # adds the title for the graph 
