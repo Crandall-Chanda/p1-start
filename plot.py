@@ -3,13 +3,14 @@ import numpy as np
 import sys
 
 filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2
-Data = np.loadtxt(filename, skiprows = 33, delimiter = ',' )
+Data = np.loadtxt(filename, skiprows = 33, delimiter = ','  )
+Material =  sys.argv[2] 
 Stress= Data[:,3]
 Strain = Data [:,7] 
 plt.plot(Strain, Stress, color = 'Mediumorchid' , label = 'darkgrey' , linestyle = '-.')
 plt.xlabel('Strain')
 plt.ylabel('Stress Mpa')
-plt.title('Stress vs Strain for Glass ')
+plt.title('Stress vs Strain for '+ Material)
 plt.grid()
 plt.show()
 print(Stress)
