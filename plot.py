@@ -59,7 +59,7 @@ def bestfit (x,y):
 	degree_1 = z*lin_arr + z0
 	return degree_1
 Best_Fit = (Strain, Stress)
-lin_arr = (0,10,100,True)
+lin_arr = (0,10,1000,True)
 plt.plot(lin_arr, Best_Fit , color = 'darkgrey' , linestyle = '-.', label = 'Youngs Modulus')
 plt.show();
 exit ()	
