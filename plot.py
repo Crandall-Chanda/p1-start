@@ -39,6 +39,9 @@ exit() # not sure .. why i have exit .. i saw it the lecture :)
 ## Part 2
 # Check to see if your code in part 1 will plot all of the files in raw-data/
 # Edit the files (use git liberally here!) to make them more usable
+# ----------------------------------------------------------------------
+#I had to split the files into separate files for this to work 
+# this means only one specimin per data file 
 
 
 ## Part 3
@@ -46,7 +49,8 @@ exit() # not sure .. why i have exit .. i saw it the lecture :)
 # the stress-strain data. Plot your line against the data to make 
 # sure it makes sense! Use the slope of this line to calculate and print
 # the Young's modulus (with units!)
-
+# ----------------------------------------------------------------------------------
+# 
 
 ## Part 4
 # Modify your code to save your plots to a file and see if you can generate
