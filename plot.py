@@ -17,7 +17,6 @@ plt.show()
 print(Stress) # dont think this did anything 
 print(Strain) # or this ... 
 
-exit() # not sure .. why i have exit .. i saw it the lecture :)
 
 # Part 0
 # Figure out what arguments to add to the loadtxt function call
@@ -61,8 +60,8 @@ def bestfit (x,y):
 	return degree_1
 plt.plot(lin_arr, Best_Fit , color = 'darkgrey' , linestyle = '-.', label = 'Youngs Modulus')
 plt.show();
-	
-
+exit ()	
+# it doesnt seem to plot this so i added exit here instead 
 
 
 
