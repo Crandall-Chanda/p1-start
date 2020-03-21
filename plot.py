@@ -3,19 +3,20 @@ import numpy as np
 import sys
 
 filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py ARG1 ARG2
-Data = np.loadtxt(filename, skiprows = 33, delimiter = ','  )
-Material =  sys.argv[2] 
-Stress= Data[:,3]
-Strain = Data [:,7] 
-plt.plot(Strain, Stress, color = 'Mediumorchid' , label = 'darkgrey' , linestyle = '-.')
-plt.xlabel('Strain')
-plt.ylabel('Stress Mpa')
-plt.title('Stress vs Strain for '+ Material)
-plt.grid()
+Data = np.loadtxt(filename, skiprows = 33, delimiter = ','  ) # separated the matrix of data from the material
+Material =  sys.argv[2] # adds an argument to change the title 
+Stress= Data[:,3] # y axis data 
+Strain = Data [:,7] # x axis data 
+plt.plot(Strain, Stress, color = 'Mediumorchid' , label = 'darkgrey' , linestyle = '-.') # plots the variable
+plt.xlabel('Strain') # adds x axis label 
+plt.ylabel('Stress Mpa') # adds y axis label 
+plt.title('Stress vs Strain for '+ Material) # adds the title for the graph 
+plt.grid() # adds grid 
 plt.show()
-print(Stress)
-print(Strain)
-exit()
+print(Stress) # dont think this did anything 
+print(Strain) # or this ... 
+
+exit() # not sure .. wjy i have exit .. i saw it int he lecture :)
 
 # Part 0
 # Figure out what arguments to add to the loadtxt function call
