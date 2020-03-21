@@ -30,3 +30,9 @@
 # were just too many entries
 
 
+#Notes
+#-----------------------------
+# I saved the graphs in a directory called graphs under p1-start 
+# i dont know how to access them ...... 
+
+
