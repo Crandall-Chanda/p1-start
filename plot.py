@@ -64,6 +64,7 @@ plt.plot(lin_arr, Best_Fit , color = 'darkgrey' , linestyle = '-.', label = 'You
 plt.show();
 exit ()	
 # it doesnt seem to plot this so i added exit here instead 
+# i took the function from hw # 7 and tried to make it work here 
 
 
 
