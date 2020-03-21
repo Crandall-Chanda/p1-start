@@ -50,7 +50,22 @@ exit() # not sure .. why i have exit .. i saw it the lecture :)
 # sure it makes sense! Use the slope of this line to calculate and print
 # the Young's modulus (with units!)
 # ----------------------------------------------------------------------------------
-# 
+
+def bestfit (x,y):
+	mean_x = mean (x)
+	mean_y = mean (y)
+	z = np.sum(y*(x-mean_x))/np.sum(x*(x-mean_x))
+	z0 = mean_y - z*mean_x
+	lin_arr = mp.linspace(0,10,100,True)
+	degree_1 = z*lin_arr + z0
+	return degree_1
+plt.plot(lin_arr, Best_Fit , color = 'darkgrey' , linestyle = '-.', label = 'Youngs Modulus')
+plt.show();
+	
+
+
+
+
 
 ## Part 4
 # Modify your code to save your plots to a file and see if you can generate
